@@ -1,0 +1,24 @@
+:root{--navy:#0b1f3a;--navy2:#13305a;--teal:#0f9d8a;--bg:#f4f7fb;--card:#fff;--ink:#1a2433;--mute:#5a6b82;--line:#dbe3ee;--red:#b42318;--amb:#b25e09;--grn:#157f3b}
+*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,"Noto Sans Devanagari",Segoe UI,sans-serif;background:var(--bg);color:var(--ink)}
+.top{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;background:var(--navy);color:#fff;padding:.6rem 1rem;position:sticky;top:0;z-index:5}
+.brand{color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem}.brand span{color:#5eead4}
+nav{display:flex;flex-wrap:wrap;gap:.25rem;flex:1}nav a{color:#cfe0f5;text-decoration:none;padding:.4rem .7rem;border-radius:8px}nav a.on,nav a:hover{background:var(--navy2);color:#fff}
+.lang button{background:transparent;color:#cfe0f5;border:1px solid #4a6a96;padding:.3rem .7rem;cursor:pointer}.lang button:first-child{border-radius:8px 0 0 8px}.lang button:last-child{border-radius:0 8px 8px 0}.lang button.on{background:var(--teal);border-color:var(--teal);color:#fff}
+.banner{background:#fff7e6;border-bottom:1px solid #f1d9a6;color:#6b4a06;font-size:.85rem;padding:.4rem 1rem;text-align:center}
+main{max-width:980px;margin:0 auto;padding:1.25rem 1rem 3rem}main:focus{outline:none}
+h1{font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2;color:var(--navy);margin:.2rem 0 .6rem}h2{color:var(--navy);margin-top:1.6rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.1rem;box-shadow:0 1px 3px rgba(11,31,58,.06);margin:.8rem 0}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:18px;padding:1.8rem 1.4rem}.hero h1{color:#fff}.hero p{color:#d6e4f7;max-width:60ch}
+.grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.btn{background:var(--teal);color:#fff;border:0;border-radius:10px;padding:.65rem 1.1rem;font-size:1rem;cursor:pointer;font-weight:600}.btn:hover{filter:brightness(.93)}.btn.sec{background:#fff;color:var(--navy);border:1px solid var(--line)}.btn:disabled{opacity:.55;cursor:wait}
+textarea,input[type=text],input[type=file]{width:100%;border:1px solid var(--line);border-radius:10px;padding:.7rem;font:inherit;background:#fff}textarea{min-height:140px;resize:vertical}
+.tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:.6rem}.tabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:.4rem .9rem;cursor:pointer;font:inherit}.tabs button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+.badge{display:inline-block;padding:.25rem .7rem;border-radius:999px;font-weight:700;color:#fff}.b-high_concern{background:var(--red)}.b-moderate_concern{background:var(--amb)}.b-low_concern{background:#8a6d00}.b-no_known_patterns,.b-insufficient_text{background:#44546a}
+blockquote{margin:.3rem 0;padding:.4rem .7rem;border-left:4px solid var(--teal);background:#eefaf8;border-radius:0 8px 8px 0;font-family:ui-monospace,monospace;white-space:pre-wrap;word-break:break-word}
+.note{font-size:.88rem;color:var(--mute)}.warn{background:#fff7e6;border:1px solid #f1d9a6;border-radius:10px;padding:.6rem .8rem;font-size:.92rem}.err{background:#fdecea;border:1px solid #f4b8b2;color:#7a1c14;border-radius:10px;padding:.6rem .8rem}
+.chat{display:flex;flex-direction:column;gap:.5rem;max-height:420px;overflow:auto;margin-bottom:.6rem}.msg{padding:.6rem .8rem;border-radius:12px;max-width:90%;white-space:pre-wrap}.msg.u{background:var(--navy);color:#fff;align-self:flex-end}.msg.a{background:#eef2f8;align-self:flex-start}
+.opt{display:block;width:100%;text-align:left;margin:.35rem 0;padding:.6rem .8rem;border:1px solid var(--line);border-radius:10px;background:#fff;cursor:pointer;font:inherit}.opt.ok{border-color:var(--grn);background:#e8f6ed}.opt.no{border-color:var(--red);background:#fdecea}
+footer{text-align:center;color:var(--mute);font-size:.82rem;padding:1.2rem}.row{display:flex;gap:.5rem;flex-wrap:wrap}.row>input{flex:1;min-width:200px}
+a{color:#0a6b8a}small{color:var(--mute)}
+@media(prefers-reduced-motion:no-preference){.card{transition:box-shadow .2s}.card:hover{box-shadow:0 4px 14px rgba(11,31,58,.1)}}
+[hidden]{display:none!important}

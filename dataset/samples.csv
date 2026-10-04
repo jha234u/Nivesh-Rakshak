@@ -1,0 +1,26 @@
+sample_id,message_text,language,category,indicators,expected_analysis
+S01,"Guaranteed 40% monthly returns! SEBI registered. Join our VIP WhatsApp group. Hurry, only 10 seats left!",en,suspicious,guaranteed_returns|regulatory_claim|group_invite|urgency,high or moderate concern
+S02,"Dear customer your demat account will be blocked today. Share your OTP to verify KYC immediately.",en,suspicious,sensitive_info|urgency,moderate or higher concern
+S03,"Double your money in 15 days. Risk-free scheme. Pay registration fee Rs 3000 now.",en,suspicious,guaranteed_returns|payment_request,high or moderate concern
+S04,"Sure-shot multibagger insider tip from operator call. Join our Telegram group now.",en,suspicious,tip_language|group_invite,moderate concern
+S05,"I am calling from SEBI cyber cell. Transfer Rs 15000 deposit to UPI id officer@upi to avoid action.",en,suspicious,impersonation|payment_request,moderate or higher concern
+S06,"Your refund is pending. Claim now: http://sebi-gov-in-refund.xyz/claim and send your card number.",en,suspicious,suspicious_link|sensitive_info,moderate or higher concern
+S07,"गारंटीशुदा रिटर्न! रोज़ 5% मुनाफ़ा। अपना ओटीपी बताएं और आज ही जुड़ें।",hi,suspicious,guaranteed_returns|sensitive_info|urgency,high concern
+S08,"सेबी पंजीकृत कंपनी। पैसे दोगुना करें बिना जोखिम। यूपीआई पर शुल्क जमा करें।",hi,suspicious,regulatory_claim|guaranteed_returns|payment_request,high or moderate concern
+S09,"हमारे VIP टेलीग्राम ग्रुप से जुड़ें। पक्की टिप और इनसाइडर जानकारी रोज़ मिलेगी।",hi,suspicious,group_invite|tip_language,moderate concern
+S10,"Earn Rs 5000 daily from home with our trading app. No experience needed. Download link in bio.",en,suspicious,none_of_the_rules,KNOWN HARD CASE: no rule keywords
+S11,"Your friend recommended this coin. Everyone is buying and it will moon this week. Do not miss out.",en,suspicious,none_of_the_rules,KNOWN HARD CASE: hype without rule keywords
+S12,"Bank officer here. For account safety please read out the code you just received on your phone.",en,suspicious,sensitive_info(indirect),KNOWN HARD CASE: indirect OTP request
+L01,"Your SIP of Rs 500 for the fund has been processed. Mutual fund investments are subject to market risks.",en,legitimate,,no known patterns
+L02,"Never share your OTP with anyone. Bank staff will never ask for it.",en,legitimate,,no known patterns
+L03,"Your OTP for login is 482913. Do not share it with anyone.",en,legitimate,,no known patterns
+L04,"Returns on equity investments are not guaranteed and may vary with market conditions.",en,legitimate,,no known patterns
+L05,"Reminder: your quarterly account statement is available in the app. Log in through the official app to view it.",en,legitimate,,no known patterns
+L06,"किसी को भी अपना ओटीपी न बताएं। बैंक कभी ओटीपी नहीं माँगता।",hi,legitimate,,no known patterns
+L07,"निवेश बाज़ार जोखिमों के अधीन हैं। रिटर्न की गारंटी नहीं है। निवेश से पहले दस्तावेज़ ध्यान से पढ़ें।",hi,legitimate,,no known patterns
+L08,"Your account ending 1234 was credited with Rs 2,000 on 12 Sep. Thank you for banking with us.",en,legitimate,,no known patterns
+L09,"The regulator has issued an investor alert about unregistered advisers. Check registration on the official website before investing.",en,legitimate,,no known patterns
+L10,"Free webinar on understanding mutual fund risk, Saturday 11 am. Register on our official website.",en,legitimate,,no known patterns
+A01,"Limited period offer on our mutual fund SIP: zero entry fee until month end.",en,ambiguous,urgency(weak),low or no concern acceptable
+A02,"Pay Rs 5000 today to renew your demat annual maintenance charge before it lapses.",en,ambiguous,payment_request,could be genuine or scam; low/moderate acceptable
+A03,"Join our free Telegram group to learn investing basics. We do not give tips.",en,ambiguous,group_invite,low concern acceptable
